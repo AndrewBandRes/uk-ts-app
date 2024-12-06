@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  categoty: one
+  title: MyString
+  deleted_at: 2024-12-04 15:33:02
+
+two:
+  categoty: two
+  title: MyString
+  deleted_at: 2024-12-04 15:33:02
+
+# == Schema Information
+#
+# Table name: inventories
+#
+#  id          :bigint           not null, primary key
+#  deleted_at  :datetime
+#  title       :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  category_id :bigint
+#
+# Indexes
+#
+#  index_inventories_on_category_id  (category_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (category_id => categories.id)
+#
