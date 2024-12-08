@@ -1,0 +1,31 @@
+<header class="header">
+  <div class='site-header'>
+    <div class="site-header__inner container">
+      <%= link_to root_path, class: 'site-header__app-title' do %>
+        <%= image_tag 'logotype.jpg', class: 'site-header__logo' %>
+        <div class="site-header__app-name tablet-and-up">
+          <div><%= I18n.t('app.title').html_safe %></div>
+          <div class="site-header__app-description"><%= I18n.t('app.description').html_safe %></div>
+        </div>
+      <% end %>
+      <div class="site-header__actions">
+        <button class="icon icon--burger mobile-only js-header-menu">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav__outer">
+      <div class="container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <%= link_to 'Главная', root_path,
+              class: 'nav__link ' + (current_controller?('home') || current_controller?('dashboard') ? 'nav__link--active' : '')
+            %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

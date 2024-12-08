@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= I18n.t 'app.title' %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= favicon_link_tag %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload", media: "all" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= render 'header' %>
+    <main class="main">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+    <%= render 'footer' %>
+
+    <%= content_tag :div, flash['alert'], :class => 'flash_message flash_message--danger' if flash['alert'] %>
+    <%= content_tag :div, flash['notice'], :class => 'flash_message flash_message--success' if flash['notice'] %>
+  </body>
+</html>

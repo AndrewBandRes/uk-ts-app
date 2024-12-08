@@ -1,0 +1,25 @@
+ru:
+  app:
+    title: 'ООО "Управляющая компания "Техсервис"'
+    description: 'Качество, надёжность, результат!'
+
+  not_authorized: Доступ запрещен
+  activerecord:
+    attributes:
+      user:
+        email: 'Электронная почта'
+        password: 'Пароль'
+        current_password: 'Текущий пароль'
+        password_confirmation: 'Подтверждение пароля'
+        surname: 'Фамилия'
+        name: 'Имя'
+        patronymic: 'Отчество'
+    errors:
+      messages:
+        blank: 'не может быть пустым'
+        taken: 'уже занят'
+        confirmation: 'не совпадает с введенным паролем'
+
+  cancan:
+    access_denied:  Доступ запрещен
+  invalid_authenticity_token: 'Возникла ошибка сессии. Пожалуйста, авторизуйтесь заново'
