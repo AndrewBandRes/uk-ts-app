@@ -1,0 +1,19 @@
+@use "../base/variables" as *
+
+.address
+  font-size: 15px
+
+  &:not(:last-child)
+    margin-bottom: $indent-sm
+
+  &__item
+    display: flex
+    align-items: center
+    gap: 10px
+
+    &:not(:last-child)
+      margin-bottom: $indent-sm
+
+  ul
+    li:nth-last-child(-n+2)
+      color: red

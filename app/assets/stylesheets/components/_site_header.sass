@@ -1,0 +1,35 @@
+@use "../base/variables" as *
+
+.site-header
+
+  &__inner
+    display: flex
+    align-content: center
+    justify-content: space-between
+    margin-top: 25px
+    margin-bottom: 25px
+
+  &__app-title
+    display: flex
+    align-items: center
+    color: $color-black
+    text-decoration: none
+
+  &__app-name
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: baseline
+    padding-left: 20px
+    margin-left: 20px
+    border-left: 2px solid $color-black
+    height: 100%
+
+  &__app-description
+    font-size: 14px
+    color: #888
+    margin: 0
+
+  &__actions
+    display: flex
+    align-items: center

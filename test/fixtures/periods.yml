@@ -1,0 +1,28 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  started_at: 2024-12-04
+  closed_at: 2024-12-04
+  deleted_at: 2024-12-04 15:29:21
+
+two:
+  started_at: 2024-12-04
+  closed_at: 2024-12-04
+  deleted_at: 2024-12-04 15:29:21
+
+# == Schema Information
+#
+# Table name: periods
+#
+#  id              :bigint           not null, primary key
+#  closed_at       :date
+#  deleted_at      :datetime
+#  started_at      :date
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  organization_id :bigint
+#
+# Indexes
+#
+#  index_periods_on_organization_id  (organization_id)
+#

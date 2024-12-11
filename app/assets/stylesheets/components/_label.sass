@@ -1,0 +1,11 @@
+@use "../base/variables" as *
+
+.label
+  font-size: 16px
+  color: $color-text-muted
+
+  &--required
+
+    &:after
+      content: '*'
+      color: $color-danger

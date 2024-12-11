@@ -1,0 +1,57 @@
+<h2>Изменение данных пользователя</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field"></div>
+    <%= f.label :surname %><br />
+    <%= f.text_field :surname, autofocus: true, autocomplete: "фамилия" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, autocomplete: "имя" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :patronymic %><br />
+    <%= f.text_field :patronymic, autocomplete: "отчество" %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "электронная почта" %>
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>В настоящее время ожидается подтверждение: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :password %> <i>(оставьте пустым, если не хотите менять)</i><br />
+    <%= f.password_field :password, autocomplete: "новый пароль" %>
+    <% if @minimum_password_length %>
+      <br />
+      <em><%= @minimum_password_length %> минимальное количество символов</em>
+    <% end %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "новый пароль" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :current_password %> <i>(введите ваш текущий пароль для подтверждения изменений)</i><br />
+    <%= f.password_field :current_password, autocomplete: "текущий пароль" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Сохранить" %>
+  </div>
+<% end %>
+
+<h3>Удалить аккаунт</h3>
+
+<div><%= button_to "Удалить аккаунт", registration_path(resource_name), data: { confirm: "Вы уверены?", turbo_confirm: "Вы уверены?" }, method: :delete %></div>
+
+<%= link_to "Назад", :back %>

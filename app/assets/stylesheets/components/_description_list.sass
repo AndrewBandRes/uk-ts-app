@@ -1,0 +1,15 @@
+@use "../base/variables" as *
+
+.description-list
+
+  &__item
+
+    &:not(:last-child)
+      margin-bottom: $indent-sm
+
+  &__term
+    color: $color-text-muted
+
+  &__term,
+  &__definition
+    display: inline

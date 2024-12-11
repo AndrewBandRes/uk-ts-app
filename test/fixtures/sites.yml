@@ -1,0 +1,30 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  manager: MyString
+  deleted_at: 2024-12-04 15:36:48
+
+two:
+  title: MyString
+  description: MyString
+  manager: MyString
+  deleted_at: 2024-12-04 15:36:48
+
+# == Schema Information
+#
+# Table name: sites
+#
+#  id             :bigint           not null, primary key
+#  deleted_at     :datetime
+#  description    :string
+#  title          :string
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#  affiliation_id :bigint
+#
+# Indexes
+#
+#  index_sites_on_affiliation_id  (affiliation_id)
+#

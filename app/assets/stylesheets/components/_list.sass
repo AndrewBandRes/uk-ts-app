@@ -1,0 +1,24 @@
+@use "dropdown"
+@use "../base/variables" as *
+
+$parent: '.list'
+
+#{dropdown.$parent}
+
+  &--row
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    gap: 10px
+
+  &__item
+
+    &:not(:last-child)
+      margin-bottom: $indent-lg
+
+.list--row
+
+  #{dropdown.$parent}__item
+
+    &:not(:last-child)
+      margin-bottom: 0
