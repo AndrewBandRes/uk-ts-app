@@ -11,11 +11,11 @@ end
 # Table name: affiliations
 #
 #  id              :bigint           not null, primary key
-#  deleted_at      :datetime
+#  organization_id :bigint
 #  title           :string
+#  deleted_at      :datetime
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
-#  organization_id :bigint
 #
 # Indexes
 #

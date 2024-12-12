@@ -26,12 +26,12 @@ end
 # Table name: permissions
 #
 #  id           :bigint           not null, primary key
-#  context_type :string
+#  user_id      :uuid
 #  role         :string
+#  context_id   :bigint
+#  context_type :string
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
-#  context_id   :bigint
-#  user_id      :uuid
 #
 # Indexes
 #

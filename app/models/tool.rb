@@ -20,11 +20,11 @@ end
 # Table name: tools
 #
 #  id          :bigint           not null, primary key
-#  deleted_at  :datetime
+#  category_id :bigint
 #  title       :string
+#  deleted_at  :datetime
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
-#  category_id :bigint
 #
 # Indexes
 #

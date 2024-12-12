@@ -11,15 +11,15 @@ end
 # Table name: inventories
 #
 #  id            :bigint           not null, primary key
-#  current_stock :integer
-#  deleted_at    :datetime
-#  opening_stock :integer
-#  created_at    :datetime         not null
-#  updated_at    :datetime         not null
+#  user_id       :uuid
 #  period_id     :bigint
 #  site_id       :bigint
 #  tool_id       :bigint
-#  user_id       :uuid
+#  opening_stock :integer
+#  current_stock :integer
+#  deleted_at    :datetime
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
 #
 # Indexes
 #

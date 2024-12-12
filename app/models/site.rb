@@ -19,12 +19,12 @@ end
 # Table name: sites
 #
 #  id             :bigint           not null, primary key
-#  deleted_at     :datetime
-#  description    :string
+#  affiliation_id :bigint
 #  title          :string
+#  description    :string
+#  deleted_at     :datetime
 #  created_at     :datetime         not null
 #  updated_at     :datetime         not null
-#  affiliation_id :bigint
 #
 # Indexes
 #

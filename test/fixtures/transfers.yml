@@ -21,14 +21,14 @@ two:
 # Table name: transfers
 #
 #  id                :bigint           not null, primary key
-#  deleted_at        :datetime
-#  delta             :integer
-#  note              :text
-#  reason            :text
-#  created_at        :datetime         not null
-#  updated_at        :datetime         not null
 #  from_inventory_id :bigint
 #  to_inventory_id   :bigint
+#  delta             :integer
+#  reason            :text
+#  note              :text
+#  deleted_at        :datetime
+#  created_at        :datetime         not null
+#  updated_at        :datetime         not null
 #
 # Indexes
 #

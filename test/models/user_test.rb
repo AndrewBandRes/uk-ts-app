@@ -11,25 +11,25 @@ end
 # Table name: users
 #
 #  id                     :uuid             not null, primary key
-#  confirmation_sent_at   :datetime
-#  confirmation_token     :string
-#  confirmed_at           :datetime
-#  current_sign_in_at     :datetime
-#  current_sign_in_ip     :string
-#  deleted_at             :datetime
-#  email                  :string           default(""), not null
-#  encrypted_password     :string           default(""), not null
-#  last_sign_in_at        :datetime
-#  last_sign_in_ip        :string
+#  surname                :string           not null
 #  name                   :string           not null
 #  patronymic             :string
-#  reset_password_sent_at :datetime
+#  email                  :string           default(""), not null
+#  encrypted_password     :string           default(""), not null
 #  reset_password_token   :string
+#  reset_password_sent_at :datetime
 #  sign_in_count          :integer          default(0), not null
-#  surname                :string           not null
+#  current_sign_in_at     :datetime
+#  last_sign_in_at        :datetime
+#  current_sign_in_ip     :string
+#  last_sign_in_ip        :string
+#  confirmation_token     :string
+#  confirmed_at           :datetime
+#  confirmation_sent_at   :datetime
 #  unconfirmed_email      :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  deleted_at             :datetime
 #
 # Indexes
 #

@@ -16,8 +16,8 @@ end
 # Table name: organizations
 #
 #  id         :bigint           not null, primary key
-#  deleted_at :datetime
 #  title      :string
+#  deleted_at :datetime
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
